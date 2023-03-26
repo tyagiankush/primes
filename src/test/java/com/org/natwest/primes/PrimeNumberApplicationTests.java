@@ -1,4 +1,4 @@
-package org.com.natwest.primes;
+package com.org.natwest.primes;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -64,6 +64,7 @@ class PrimeNumberApplicationTests {
 		assertFalse(primeNumberService.isPrime(9, "mr"));
 		assertFalse(primeNumberService.isPrime(10, "mr"));
 		assertFalse(primeNumberService.isPrime(4, "mr"));
+		assertTrue(primeNumberService.isPrime(2, "mr"));
 	}
 
 }

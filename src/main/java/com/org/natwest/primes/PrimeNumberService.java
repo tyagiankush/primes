@@ -1,4 +1,4 @@
-package org.com.natwest.primes;
+package com.org.natwest.primes;
 
 import org.springframework.stereotype.Service;
 
@@ -64,6 +64,9 @@ public class PrimeNumberService {
         // Handle small cases
         if (n <= 1 || (n > 2 && n % 2 == 0)) {
             return false;
+        }
+        if (n <= 3) {
+            return true;
         }
 
         // Express n-1 as 2^r * d

@@ -1,4 +1,4 @@
-package org.com.natwest.primes;
+package com.org.natwest.primes;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

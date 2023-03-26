@@ -1,4 +1,4 @@
-package org.com.natwest.primes;
+package com.org.natwest.primes;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -42,7 +42,7 @@ public class PrimeNumberController {
             response.setInitial(num);
 
         } catch (Exception e) {
-            LOGGER.error("Caught an error in GetPrimeNumbers, exiting...");
+            LOGGER.error("Caught an error in GetPrimeNumbers {}, exiting...", e.getMessage());
             return ResponseEntity.internalServerError()
                     .body(new PrimeCheckerResponse(num, new ArrayList<>(), e.getMessage()));
         }
